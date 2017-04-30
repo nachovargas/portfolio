@@ -1,0 +1,165 @@
+.navbar
+	background-color: #000
+	border: none
+	max-height: 51px
+	transition: top 0.2s ease-in-out
+
+	&.nav-up
+		top: -51px
+
+	.navbar-collapse
+		border: none
+		box-shadow: none
+
+	.navbar-toggle
+		border: none
+		transition: all .3 ease
+
+		&:hover,
+		&:focus
+			transition: all .5s ease
+			background: transparent
+
+		.icon-bar
+			background-color: #fff
+			height: 3px
+
+	.navbar-brand
+		font-family: $font-serif
+		font-size: 13px
+		text-transform: uppercase
+		font-weight: 700
+		letter-spacing: 2px
+		color: #fff
+		text-decoration: none
+
+		&:hover,
+		&:focus
+			color: #fff
+
+	.navbar-collapse
+		overflow: visible
+		transition: all .5s ease
+
+	.navbar-right
+		display: flex
+		flex-direction: column
+		justify-content: space-around
+		height: 100vh
+		margin-top: 0
+		background-color: rgba(000,000,000,.8)
+
+		li
+
+			a
+				text-align: center
+				font-family: $font-serif
+				letter-spacing: 8px
+				font-weight: 700
+				font-size: 30px
+				color: #fff !important
+				text-transform: uppercase
+				background-color: transparent !important
+				transition: all .3s ease
+
+				&:hover
+					color: $color-base !important
+
+					&:after,
+					&:before
+						content: '-'
+
+		.social
+			display: flex
+			justify-content: space-around
+
+			a
+				font-size: 24px
+
+				&:hover
+					&:after,
+					&:before
+						content: ''
+
+.rotate90
+	transform: rotate(180deg)
+
+
+
+@media screen and (min-width: 768px) and (max-width:1023px)
+
+	.navbar-header
+		max-height: none
+
+	.navbar-header 
+		float: none
+	
+	.navbar-toggle 
+		display: block
+	
+	.navbar-collapse.collapse 
+		display: none!important
+	
+	.navbar-nav 
+		float: none!important
+	
+	.navbar-nav>li 
+		float: none
+	
+	.navbar-collapse.collapse.in
+		display: block !important
+
+
+
+@media screen and (min-width: 768px)
+
+	.navbar.nav-up
+		top: -110px
+	
+	.navbar .navbar-right
+		margin: 0 -30px
+
+	.navbar
+		max-height: 110px
+
+		.navbar-toggle,
+		.navbar-brand
+			margin: 30px 10px
+			font-size: 18px
+			padding: 15px
+
+	.navbar .navbar-right .social a
+		font-size: 30px
+
+
+@media screen and (min-width: 1024px)
+
+	.navbar .navbar-right
+		flex-direction: row
+		background: transparent
+		height: auto
+		margin: 0
+
+	.navbar .navbar-right li a
+		font-size: 16px
+		letter-spacing: 2px
+		margin: 30px 0
+		color: #b1b1b1
+
+		&:hover
+			color: $color-base !important
+
+			&:after,
+			&:before
+				content: ''
+
+	.navbar .navbar-right li.last-menu-item a
+		border-right: 2px solid #fff
+
+	.navbar .navbar-right li.social
+		display: none
+
+
+
+
+

@@ -1,0 +1,570 @@
+doctype html
+html(lang="en")
+
+	head
+		title Nacho Vargas
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+
+		// Bootstrap core CSS
+		link(href='#{pathToAssets}/dist/css/bootstrap.min.css', rel='stylesheet')
+		// Custom styles for this template
+		link(href='#{pathToSelectedTemplateWithinBootstrap}/navbar-fixed-top.css', rel='stylesheet')
+		// Just for debugging purposes. Don't actually copy these 2 lines!
+		//if lt IE 9
+		script(src='#{pathToAssets}/docs/assets/js/ie8-responsive-file-warning.js')
+		script(src='#{pathToAssets}/docs/assets/js/ie-emulation-modes-warning.js')
+		// IE10 viewport hack for Surface/desktop Windows 8 bug
+		script(src='#{pathToAssets}/docs/assets/js/ie10-viewport-bug-workaround.js')
+		// HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
+		//if lt IE 9
+		script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
+		script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+
+		link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous")
+
+		link(rel="stylesheet" href="css/main.min.css")
+
+
+	body
+		//fixed navbar
+		.navbar.navbar-default.navbar-fixed-top.nav-down(role="navigation")
+			.container
+				.navbar-header
+					button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar-collapse')
+						span.sr-only Toggle navigation
+						span.icon-bar
+						span.icon-bar
+						span.icon-bar
+					a.navbar-brand(href='#') Nacho Vargas
+				.navbar-collapse.collapse#navbar-collapse
+					ul.nav.navbar-nav.navbar-right
+						li
+							a(href='#projects') Projects
+
+						li
+							a(href='#about') About Me
+
+						li
+							a(href='#skills') Skills
+
+						li
+							a(href='#contact') Contact
+
+						li.social
+							a(href='https://www.behance.net/nachovargas' target='_blank')
+								i.fa.fa-behance(aria-hidden='true')
+							a(href='https://es.linkedin.com/in/vargasnacho' target='_blank')
+								i.fa.fa-linkedin(aria-hidden='true')
+							a(href='https://es.pinterest.com/nachovargas' target='_blank')
+								i.fa.fa-pinterest(aria-hidden='true')
+
+		header.container-fluid
+			.title
+				h1 Nacho Vargas
+				h2 Graphic Design + Front-end Dev
+
+
+		.down.down-header.container.text-center
+			a(href='#projects')
+				i.fa.fa-angle-down(aria-hidden='true')
+
+
+		section.container#projects
+			.row
+				.col-sm-8.col-sm-offset-2
+					h3 Projects
+					h4.subtitle Here you can check some of my recent work.
+
+			.row
+				.col-xs-6.col-sm-4.col-md-3
+					span.tag graphic
+					.img-container
+						img.img-responsive(data-toggle='modal' data-target='#proj1' src='img/portfolio/NACHO_VARGAS_CIFO_thumbnail.jpg')
+					p.title(data-toggle='modal' data-target='#proj1' src='img/portfolio/NACHO_VARGAS_CIFO_thumbnail.jpg') CIFO Hospitalet
+
+				.col-xs-6.col-sm-4.col-md-3
+					span.tag web
+					.img-container
+						img.img-responsive(data-toggle='modal' data-target='#proj3' src='img/portfolio/NACHO_VARGAS_cupulaevents_thumbnail.jpg')
+					p.title(data-toggle='modal' data-target='#proj3' src='img/portfolio/NACHO_VARGAS_cupulaevents_thumbnail.jpg') Cupula Events
+						
+				.col-xs-6.col-sm-4.col-md-3
+					span.tag web
+					.img-container
+						img.img-responsive(data-toggle='modal' data-target='#proj4' src='img/portfolio/NACHO_VARGAS_rafaelcidoncha_thumbnail.jpg')
+					p.title(data-toggle='modal' data-target='#proj4' src='img/portfolio/NACHO_VARGAS_rafaelcidoncha_thumbnail.jpg') Rafael Cidoncha
+
+				.col-xs-6.col-sm-4.col-md-3
+					span.tag web
+					.img-container
+						img.img-responsive(data-toggle='modal' data-target='#proj5' src='img/portfolio/NACHO_VARGAS_recshipping_thumbnail.jpg')
+					p.title(data-toggle='modal' data-target='#proj5' src='img/portfolio/NACHO_VARGAS_recshipping_thumbnail.jpg') RECShipping
+
+				.col-xs-6.col-sm-4.col-md-3
+					span.tag web
+					.img-container
+						img.img-responsive(data-toggle='modal' data-target='#proj6' src='img/portfolio/NACHO_VARGAS_dentalpiulachs_thumbnail.jpg')
+					p.title(data-toggle='modal' data-target='#proj6' src='img/portfolio/NACHO_VARGAS_dentalpiulachs_thumbnail.jpg') Dental Piulachs
+
+				.col-xs-6.col-sm-4.col-md-3
+					span.tag web
+					.img-container
+						img.img-responsive(data-toggle='modal' data-target='#proj7' src='img/portfolio/NACHO_VARGAS_compromisitalent_thumbnail.jpg')
+					p.title(data-toggle='modal' data-target='#proj7' src='img/portfolio/NACHO_VARGAS_compromisitalent_thumbnail.jpg') C&T
+						
+				.col-xs-6.col-sm-4.col-md-3
+					span.tag web
+					.img-container
+						img.img-responsive(data-toggle='modal' data-target='#proj8' src='img/portfolio/NACHO_VARGAS_CROUSCALOGERO_thumbnail.jpg')
+					p.title(data-toggle='modal' data-target='#proj8' src='img/portfolio/NACHO_VARGAS_CROUSCALOGERO_thumbnail.jpg') CrousCalogero
+
+				.col-xs-6.col-sm-4.col-md-3
+					span.tag web
+					.img-container
+						img.img-responsive(data-toggle='modal' data-target='#proj9' src='img/portfolio/NACHO_VARGAS_ARNAU_OLIVERES_thumbnail.jpg')
+					p.title(data-toggle='modal' data-target='#proj9' src='img/portfolio/NACHO_VARGAS_ARNAU_OLIVERES_thumbnail.jpg') Arnau Oliveres
+
+
+		.down.container.text-center
+			a(href='#about')
+				i.fa.fa-angle-down(aria-hidden='true')
+
+
+		section.container-fluid#about
+			.container
+				.row
+					.col-sm-8.col-sm-offset-2
+						h3 About Me
+						h4.subtitle Hi there!
+
+				.row
+					.col-xs-8.col-xs-offset-2.col-sm-4.col-sm-offset-4
+						img.img-circle.img-responsive(src='img/about.jpg')
+
+				.row
+					.col-sm-8.col-sm-offset-2
+						p.text-center I'm graphic, web designer & front-end developer based in Barcelona, Spain.
+						p.text-center Since 2011 I worked for small and medium companies, agencies and independent professionals in projects that passionated me, in each one searching for the best and smartest solutions.
+						p.text-center My goal is the continuous improving of my skills and enjoy life!
+						p.text-center I really love this game! ;)
+						a.pdf(href='assets/nachovargas-hire-this-guy.pdf' target='_blank')
+							button.btn.btn-default 
+								i.fa.fa-download(aria-hidden='true') 
+								| Download my resume
+
+
+		.down.container.text-center
+			a(href='#skills')
+				i.fa.fa-angle-down(aria-hidden='true')
+
+
+		section.container#skills
+			.row
+				.col-sm-8.col-sm-offset-2
+					h3 Skills
+					h4.subtitle I work hard and have a lot of fun during the process.
+
+			.row
+				.col-xs-6.col-md-3
+					svg.img-responsive.center-block
+						image(xlink:href='img/icons/svg/design-eye.svg' src='img/icons/png/design-eye.png' width='100%' height='100%')
+					h4.principal DESIGN EYE
+					.level
+						.bar.first
+
+				.col-xs-6.col-md-3
+					svg.img-responsive.center-block
+						image(xlink:href='img/icons/svg/idea.svg' src='img/icons/png/idea.png' width='100%' height='100%')
+					h4.principal PROBLEM SOLVING
+					.level
+						.bar.second
+
+
+				.col-xs-6.col-md-3
+					svg.img-responsive.center-block
+						image(xlink:href='img/icons/svg/collaboration.svg' src='img/icons/png/collaboration.png' width='100%' height='100%')
+					h4.principal COLLABORATION
+					.level
+						.bar.third
+
+				.col-xs-6.col-md-3
+					svg.img-responsive.center-block
+						image(xlink:href='img/icons/svg/learn.svg' src='img/icons/png/learn.png' width='100%' height='100%')
+					h4.principal LEARNING
+					.level
+						.bar.fourth
+
+
+
+			.row
+				.col-sm-6.col-sm-offset-3
+					p.text-center I've been messing around with this languages and technologies:
+			.row
+				.col-xs-6.col-sm-3.col-md-2.col-md-offset-1
+					svg.img-responsive
+						image(xlink:href='img/icons/svg/html.svg' src='img/icons/png/html.png' width='100%' height='100%')
+					h4 HTML5
+
+				.col-xs-6.col-sm-3.col-md-2
+					svg.img-responsive
+						image(xlink:href='img/icons/svg/css.svg' src='img/icons/png/css.png' width='100%' height='100%')
+					h4 CSS3
+
+				.col-xs-6.col-sm-3.col-md-2
+					svg.img-responsive
+						image(xlink:href='img/icons/svg/sass.svg' src='img/icons/png/sass.png' width='100%' height='100%')
+					h4 SASS
+
+				.col-xs-6.col-sm-3.col-md-2
+					svg.img-responsive
+						image(xlink:href='img/icons/svg/bootstrap.svg' src='img/icons/png/bootstrap.png' width='100%' height='100%')
+					h4 BOOTSTRAP
+
+				.col-xs-6.col-sm-3.col-md-2
+					svg.img-responsive
+						image(xlink:href='img/icons/svg/wordpress.svg' src='img/icons/png/wordpress.png' width='100%' height='100%')
+					h4 WORDPRESS
+
+				.col-xs-6.col-sm-3.col-md-2.col-md-offset-3
+					svg.img-responsive
+						image(xlink:href='img/icons/svg/git.svg' src='img/icons/png/git.png' width='100%' height='100%')
+					h4 GIT
+
+				.col-xs-6.col-sm-3.col-md-2.col-md-offset-0
+					svg.img-responsive
+						image(xlink:href='img/icons/svg/jade.svg' src='img/icons/png/jade.png' width='100%' height='100%')
+					h4 JADE
+
+				.col-xs-6.col-sm-3.col-md-2
+					svg.img-responsive
+						image(xlink:href='img/icons/svg/jquery.svg' src='img/icons/png/jquery.png' width='100%' height='100%')
+					h4 jQuery
+
+
+
+			.row
+				.col-sm-6.col-sm-offset-3
+					p.text-center 
+						|Some of the tools that makes my workflow easier
+						br
+						|(thank you guys, you're really AWESOME):
+
+			.row
+				.col-xs-6.col-sm-3.col-md-2.col-md-offset-2
+					svg.img-responsive
+						image(xlink:href='img/icons/svg/sublime.svg' src='img/icons/png/sublime.png' width='100%' height='100%')
+					h4 SUBLIME TEXT
+
+				.col-xs-6.col-sm-3.col-md-2
+					svg.img-responsive
+						image(xlink:href='img/icons/svg/sketch.svg' src='img/icons/png/sketch.png' width='100%' height='100%')
+					h4 SKETCH
+
+				.col-xs-6.col-sm-3.col-md-2
+					svg.img-responsive
+						image(xlink:href='img/icons/svg/photoshop.svg' src='img/icons/png/photoshop.png' width='100%' height='100%')
+					h4 PHOTOSHOP
+
+				.col-xs-6.col-sm-3.col-md-2
+					svg.img-responsive
+						image(xlink:href='img/icons/svg/ilustrator.svg' src='img/icons/png/ilustrator.png' width='100%' height='100%')
+					h4 ILUSTRATOR
+
+
+			p.text-center I really want to learn and experience more of this:
+
+			.row
+				.col-xs-6.col-sm-3.col-md-2.col-md-offset-2
+					svg.img-responsive
+						image(xlink:href='img/icons/svg/php.svg' src='img/icons/png/php.png' width='100%' height='100%')
+					h4 PHP
+
+				.col-xs-6.col-sm-3.col-md-2
+					svg.img-responsive
+						image(xlink:href='img/icons/svg/sql.svg' src='img/icons/png/sql.png' width='100%' height='100%')
+					h4 SQL
+
+				.col-xs-6.col-sm-3.col-md-2
+					svg.img-responsive
+						image(xlink:href='img/icons/svg/agile.svg' src='img/icons/png/agile.png' width='100%' height='100%')
+					h4 AGILE DEV
+
+				.col-xs-6.col-sm-3.col-md-2
+					svg.img-responsive
+						image(xlink:href='img/icons/svg/angular.svg' src='img/icons/png/angular.png' width='100%' height='100%')
+					h4 ANGULAR
+
+
+		.down.container.text-center
+			a(href='#contact')
+				i.fa.fa-angle-down(aria-hidden='true')
+
+
+		section.container-fluid#contact
+			.container
+				.row
+					.col-sm-8.col-sm-offset-2
+						h3 Contact
+						h4.subtitle For any question or if you want to share an idea you can call me or fill the form.
+
+				.row
+					.col-sm-8.col-sm-offset-2.col-md-5.col-md-offset-0
+						p.adress.lead Nacho Vargas
+						p.adress.phone
+							a(href='tel:+34658414609') 
+								i.fa.fa-phone(aria-hidden='true')
+								| +34 658 414 609
+
+						p.adress.mail
+								a(href='mailto:hola@nachovargas.es') 
+									i.fa.fa-envelope-o(aria-hidden='true')
+									| hola@nachovargas.es
+
+						p.adress
+								i.fa.fa-map-marker(aria-hidden='true')
+								| C/ Vinyals 40, 08041 - Barcelona, Spain
+
+					.col-sm-8.col-sm-offset-2.col-md-6.col-md-offset-1
+						form
+							.form-group
+								input.form-control(type='text' placeholder="Your name")
+								input.form-control(type='email' placeholder="Your email")
+							textarea.form-control(placeholder="Write your message")
+
+							button.btn.btn-default(type='submit') Send
+
+		footer.container-fluid
+			.container
+				p
+					a(href='https://www.behance.net/nachovargas' target='_blank')
+						i.fa.fa-behance(aria-hidden='true')
+
+					a(href='https://www.linkedin.com/in/vargasnacho' target='_blank')
+						i.fa.fa-linkedin(aria-hidden='true')
+
+					a(href='https://es.pinterest.com/nachovargas/' target='_blank')
+						i.fa.fa-pinterest(aria-hidden='true')
+
+					a(href='mailto:hola@nachovargas.es')
+						i.fa.fa-envelope(aria-hidden='true')
+
+				p.copy
+					span Nacho Vargas
+					br
+					| Graphic Design + Front-end Dev
+					br
+					|&copy; 
+					script.
+						document.write(new Date().getFullYear())
+
+
+
+		.modal.fade#proj1(tabindex='-1' role='dialog' aria-labelledby="myModalLabel")
+			.modal-dialog(role='document')
+				.modal-content
+
+					.modal-header
+						button.close(type='button' data-dismiss="modal" aria-label="Close")
+							span(aria-hidden="true") &times;
+						h3.modal-title#myModalLabel CIFO Hospitalet
+						p.tag.text-center Graphic
+						p Promotional stuff for the Center of Innovation and Ocupational Learning (CIFO).
+						p The goal was to express the technology spirit of the center and, also, represent part of the work the learners did.
+						p Featuring  
+							a(href='https://www.behance.net/BeatrizGarbri' target='_blank') Bea Garrido
+
+					.modal-body
+						img.img-responsive(src='img/portfolio/NACHO_VARGAS_CIFO_triptico_portada.jpg')
+
+						img.img-responsive(src='img/portfolio/NACHO_VARGAS_CIFO_triptico_interior.jpg')
+
+						img.img-responsive(src='img/portfolio/NACHO_VARGAS_CIFO_triptico_exterior.jpg')
+
+						img.img-responsive(src='img/portfolio/NACHO_VARGAS_CIFO_cartel_opi.jpg')
+
+						img.img-responsive(src='img/portfolio/NACHO_VARGAS_CIFO_web.jpg')
+
+					.modal-footer
+						button.close(type='button' data-dismiss="modal" aria-label="Close")
+							span(aria-hidden="true") &times;
+
+
+		.modal.fade#proj3(tabindex='-1' role='dialog' aria-labelledby="myModalLabel")
+			.modal-dialog(role='document')
+				.modal-content
+
+					.modal-header
+						button.close(type='button' data-dismiss="modal" aria-label="Close")
+							span(aria-hidden="true") &times;
+						h3.modal-title#myModalLabel CUPULA EVENTS
+						p.tag.text-center Web
+						p WordPress web development for the magnificent dome located at the top of the Arenas mall. This website was created to work fine for the customer and, also, for the mall operators.
+						p Designed by: 
+							a(href='https://www.artiq.es' target='_blank') Artiq
+						p Visit the full website at 
+							a(href='http://cupulaevents.com' target='_blank') cupulaevents.com
+
+					.modal-body
+						img.img-responsive(src='img/portfolio/NACHO_VARGAS_cupulaevents_web_responsive-01.jpg')
+
+						img.img-responsive(src='img/portfolio/NACHO_VARGAS_cupulaevents_web_responsive-02.jpg')
+
+					.modal-footer
+						button.close(type='button' data-dismiss="modal" aria-label="Close")
+							span(aria-hidden="true") &times;
+
+
+		.modal.fade#proj4(tabindex='-1' role='dialog' aria-labelledby="myModalLabel")
+			.modal-dialog(role='document')
+				.modal-content
+
+					.modal-header
+						button.close(type='button' data-dismiss="modal" aria-label="Close")
+							span(aria-hidden="true") &times;
+						h3.modal-title#myModalLabel RAFAEL CIDONCHA
+						p.tag.text-center Web
+						p Responsive WordPress web development for the artist Rafael Cidoncha. He is one of the best painters in Spain.
+						p Designed by: 
+							a(href='https://www.artiq.es' target='_blank') Artiq
+						p You can visit the web at 
+							a(href='http://rafaelcidoncha.es' target='_blank') rafaelcidoncha.es
+
+
+					.modal-body
+						img.img-responsive(src='img/portfolio/NACHO_VARGAS_rafaelcidoncha_web_responsive-01.jpg')
+
+						img.img-responsive(src='img/portfolio/NACHO_VARGAS_rafaelcidoncha_web_responsive-02.jpg')
+
+					.modal-footer
+						button.close(type='button' data-dismiss="modal" aria-label="Close")
+							span(aria-hidden="true") &times;
+
+
+		.modal.fade#proj5(tabindex='-1' role='dialog' aria-labelledby="myModalLabel")
+			.modal-dialog(role='document')
+				.modal-content
+
+					.modal-header
+						button.close(type='button' data-dismiss="modal" aria-label="Close")
+							span(aria-hidden="true") &times;
+						h3.modal-title#myModalLabel RECShipping
+						p.tag.text-center Web
+						p Design and responsive web development.
+						| Recshipping is the first SaaS solution allowing e-shoppers to choose their exact delivery slot at a variable price while optimising routes for involved carriers.
+						p See more at 
+							a(href='http://www.recshipping.com' target='_blank') recshipping.com
+
+					.modal-body
+						img.img-responsive(src='img/portfolio/NACHO_VARGAS_recshipping_web_responsive-01.jpg')
+
+						img.img-responsive(src='img/portfolio/NACHO_VARGAS_recshipping_web_responsive-02.jpg')
+
+					.modal-footer
+						button.close(type='button' data-dismiss="modal" aria-label="Close")
+							span(aria-hidden="true") &times;
+
+
+		.modal.fade#proj6(tabindex='-1' role='dialog' aria-labelledby="myModalLabel")
+			.modal-dialog(role='document')
+				.modal-content
+
+					.modal-header
+						button.close(type='button' data-dismiss="modal" aria-label="Close")
+							span(aria-hidden="true") &times;
+						h3.modal-title#myModalLabel DENTAL PIULACHS
+						p.tag.text-center Web
+						p Design and web development for a dental center located in Barcelona. The aim was to convey cleaning and confidence in the service.
+						p View the full website at 
+							a(href='http://dentalpiulachs.com' target='_blank') dentalpiulachs.com
+
+					.modal-body
+						img.img-responsive(src='img/portfolio/NACHO_VARGAS_dentalpiulachs_web_responsive-01.jpg')
+
+						img.img-responsive(src='img/portfolio/NACHO_VARGAS_dentalpiulachs_web_responsive-02.jpg')
+
+					.modal-footer
+						button.close(type='button' data-dismiss="modal" aria-label="Close")
+							span(aria-hidden="true") &times;
+
+
+		.modal.fade#proj7(tabindex='-1' role='dialog' aria-labelledby="myModalLabel")
+			.modal-dialog(role='document')
+				.modal-content
+
+					.modal-header
+						button.close(type='button' data-dismiss="modal" aria-label="Close")
+							span(aria-hidden="true") &times;
+						h3.modal-title#myModalLabel COMPROMÍS & TALENT
+						p.tag.text-center Web
+						p Compromís & Talent is a team of professionals with over 25 years of experience that provides people management and training and development programs for individuals, teams and companies.
+						| I develop his responsive website.
+						p Designed by: 
+							a(href='https://www.artiq.es' target='_blank') Artiq
+						p See more at 
+							a(href='http://www.compromisitalent.com' target='_blank') compromisitalent.com
+
+					.modal-body
+						img.img-responsive(src='img/portfolio/NACHO_VARGAS_compromisitalent_web_responsive-01.jpg')
+
+						img.img-responsive(src='img/portfolio/NACHO_VARGAS_compromisitalent_web_responsive-02.jpg')
+
+					.modal-footer
+						button.close(type='button' data-dismiss="modal" aria-label="Close")
+							span(aria-hidden="true") &times;
+
+
+		.modal.fade#proj8(tabindex='-1' role='dialog' aria-labelledby="myModalLabel")
+			.modal-dialog(role='document')
+				.modal-content
+
+					.modal-header
+						button.close(type='button' data-dismiss="modal" aria-label="Close")
+							span(aria-hidden="true") &times;
+						h3.modal-title#myModalLabel CROUSCALOGERO
+						p.tag.text-center Web
+						p Design and responsive web development for CrousCalogero, a product design consultancy founded in 2009 by Francesc Crous and Alessandro Calogero after a decennial experience side by side with famous designers and inside big companies's design departments.
+						| CrousCalogero’s work has been awarded with prestigious prizes like the Silver Delta 2012 and the Delta Selection 2014. 
+						p See more at 
+							a(href='http://www.crouscalogero.com' target='_blank') crouscalogero.com
+
+					.modal-body
+						img.img-responsive(src='img/portfolio/NACHO_VARGAS_CROUSCALOGERO_web_responsive2.jpg')
+
+						img.img-responsive(src='img/portfolio/NACHO_VARGAS_CROUSCALOGERO_web_responsive4.jpg')
+
+					.modal-footer
+						button.close(type='button' data-dismiss="modal" aria-label="Close")
+							span(aria-hidden="true") &times;
+
+
+		.modal.fade#proj9(tabindex='-1' role='dialog' aria-labelledby="myModalLabel")
+			.modal-dialog(role='document')
+				.modal-content
+
+					.modal-header
+						button.close(type='button' data-dismiss="modal" aria-label="Close")
+							span(aria-hidden="true") &times;
+						h3.modal-title#myModalLabel ARNAU OLIVERES
+						p.tag.text-center Web
+						p Design and web development for Arnau Olives, audiovisual creative based in Barcelona.
+						p View his awesome work at 
+							a(href='http://arnauoliveres.com' target='_blank') arnauoliveres.com
+
+					.modal-body
+						img.img-responsive(src='img/portfolio/NACHO_VARGAS_ARNAU_OLIVERES_web_responsive.jpg')
+
+						img.img-responsive(src='img/portfolio/NACHO_VARGAS_ARNAU_OLIVERES_web_responsive3.jpg')
+
+					.modal-footer
+						button.close(type='button' data-dismiss="modal" aria-label="Close")
+							span(aria-hidden="true") &times;
+
+
+
+
+	script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
+	script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js' integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous")
+
+	script(src='https://use.fontawesome.com/78a697cf64.js')
+
+	script(src='js/min/custom-min.js')

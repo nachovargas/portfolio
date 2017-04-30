@@ -1,0 +1,27 @@
+.langSwitcher
+	display: flex !important
+	justify-content: space-around
+
+	a
+		font-size: 16px !important
+		transition: all .3s ease-in-out
+
+		&:not(.active)
+			opacity: .5
+
+		&:hover,
+		&:focus
+			opacity: 1
+			color: #fff !important
+
+		&:hover:after,
+		&:hover:before
+			content: '' !important
+
+@media screen and (min-width: 1024px)
+	
+	.navbar .navbar-right .langSwitcher
+
+		a
+			&.active
+				color: $color-base !important

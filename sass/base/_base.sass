@@ -1,0 +1,76 @@
+html,
+body
+	height: 100vh
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+	font-family: $font-sans
+
+a:focus,
+.form-control:focus,
+.btn:focus
+	outline-color: transparent
+	outline-style: none
+	outline: 0px
+	border-color: transparent
+	box-shadow: none
+
+\:focus
+	outline: -webkit-focus-ring-color auto 0px
+	outline-color: transparent
+	outline-style: none
+	outline: 0px
+
+p,
+a
+	font-size: 16px
+	letter-spacing: 2px
+
+p
+	color: $grey-text
+
+h3
+	color: $color-base
+	text-align: center
+	font-family: $font-serif
+	text-transform: uppercase
+	font-weight: 700
+	letter-spacing: 2px
+	font-size: 24px
+	margin-bottom: $mbottom
+	margin-top: 40px
+
+	&:after,
+	&:before
+		content: '-'
+
+h4
+	color: $grey-text
+	font-family: $font-sans
+	font-size: 18px
+	text-align: center
+	margin-bottom: $mbottom
+
+	&.subtitle
+		color: $grey-text !important
+		font-family: $font-serif !important
+		text-transform: uppercase
+		letter-spacing: 2px
+		font-size: 18px !important
+		margin-bottom: $mbottom
+		font-weight: 600
+		line-height: 30px
+
+section
+	padding: 30px 15px
+
+
+@media screen and (min-width:768px)
+	
+	h3
+		font-size: 40px
+
+
+
+
+
+

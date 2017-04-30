@@ -1,0 +1,32 @@
+#skills
+
+	h4
+		margin-top: 0px
+		color: $color-base
+		text-align: center
+		font-family: $font-serif
+		text-transform: uppercase
+		letter-spacing: 2px
+		font-size: 12px
+		margin-bottom: 30px
+		font-weight: 600
+
+		&.principal
+			font-weight: 700
+			font-size: 9px
+
+	p.text-center
+		margin-top: $mbottom
+
+		&:after
+			content: ''
+			display: block
+			margin: 20px auto 0
+			width: 50px
+			height: 3px
+			background: $color-base
+
+@media screen and (min-width:768px)
+	#skills
+		h4.principal
+			font-size: 12px

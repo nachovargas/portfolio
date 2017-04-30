@@ -1,0 +1,90 @@
+#projects
+
+	.img-container
+		position: relative
+
+	.img-container:before
+		content: ''
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		background-color: #000
+		z-index: -2
+
+	.img-container:after
+		content: "+"
+		font-family: $font-sans
+		font-size: 50px
+		font-weight: 700
+		color: #fff
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		z-index: -1
+
+	img
+		margin-bottom: 10px
+		position: relative
+		cursor: pointer
+		transition: all .3s ease-in-out
+
+		&:hover,
+		&:focus
+			opacity: .2
+
+	.img-container:hover+p
+		color: $color-base
+
+	img+p
+		margin-bottom: $mbottom
+
+	.tag
+		position: absolute
+		top: 0
+		background: #a2a2a2
+		color: #fff
+		padding: 5px 10px
+		z-index: 99
+		font-size: 12px
+		letter-spacing: 2px
+		font-weight: 700
+
+	.title
+		text-align: center
+		font-size: 11px
+		font-family: $font-serif
+		font-weight: 600
+		margin-bottom: 40px
+		cursor: pointer
+		transition: all .3s ease-in-out
+
+		&:hover
+			color: $color-base
+
+	[class^='col']:nth-of-type(odd)
+		clear: both
+
+@media screen and (min-width:768px)
+
+	#projects
+		.title
+			font-size: 14px
+			margin-bottom: 60px
+
+		[class^='col']:nth-of-type(odd)
+			clear: none
+
+		[class^='col']:nth-of-type(4)
+			clear: both
+
+@media screen and (min-width:992px)
+
+	#projects
+		[class^='col']:nth-of-type(4)
+			clear: none
+
+		[class^='col']:nth-of-type(5)
+			clear: both
